@@ -1,4 +1,4 @@
-import {suma, capitalize, reverseString, calculator, ceaserCipher} from "./sum.js";
+import {suma, capitalize, reverseString, calculator, ceaserCipher, analyzeArray} from "./sum.js";
 let a = 5;
 let b = 10;
 
@@ -49,6 +49,14 @@ test("ceaser cipher: a-z", () => {
   expect(ceaserCipher("abcdefghijklmnopqrstuvwxyz", -10).match(/qrstuvwxyzabcdefghijklmnop/))
 }) 
 
-test("analyzeArray", () =>{
-  expect(analyzeeA([1,8,3,4,2,6]).toEqual({avarage:4, min:1, max: 8, length: 6}))
+// test("analyzeArray", () =>{
+//   expect(analyzeArray([1,8,3,4,2,6]).toEqual({avarage:4, min:1, max: 8, length: 6}))
+// })
+
+test('object assignment', () => {
+  // const data = {one: 1};
+  const data = analyzeArray([1,8,3,4,2,6])
+  console.log(data);
+  // data['two'] = 2;
+  expect(data).toEqual({avarage:4, min:1, max: 8, length: 6});
 })

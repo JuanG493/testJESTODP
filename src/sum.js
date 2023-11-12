@@ -4,7 +4,6 @@ function suma(a, b) {
 
 function capitalize(str){
   return (str[0].toUpperCase() + str.slice(1,));
-
 }
 
 function reverseString(str){
@@ -24,8 +23,6 @@ let  calculator = {
   multiply(a,b){
     return a * b;
   }
-
-
 }
 function ceaserCipher(str, key){
 let result = "";
@@ -43,8 +40,19 @@ for (let ch = 0; ch < str.length ;ch++) {
 }
 return result;
 }
-// ceaserCipher("monica!monica", 88);
 
-// let a = calculator.add(10,5);
-// console.log(calculator.add(10, 5));
-export {suma, capitalize, reverseString, calculator, ceaserCipher};
+function analyzeArray(arry){
+ 
+ let avg = arry.reduce((a, b) => a + b, 0,) / arry.length;
+  let minV= arry[0];
+  let maxV = 0;
+  for (let i = 0; i < arry.length; i++) {
+    if(arry[i] > maxV){
+      maxV = arry[i]
+    }if(arry[i] < minV ){
+      minV = arry[i]
+    }
+  }  
+  return {avarage: avg, min : minV, max: maxV, length: arry.length}
+}
+export {suma, capitalize, reverseString, calculator, ceaserCipher, analyzeArray};
