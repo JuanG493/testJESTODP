@@ -1,10 +1,4 @@
-import {suma, capitalize, reverseString, calculator, ceaserCipher, analyzeArray} from "./sum.js";
-let a = 5;
-let b = 10;
-
-test('adds 1 + 2 to equal 3', () => {
-  expect(suma(1, 2)).toBe(3);
-});
+import {capitalize, reverseString, calculator, ceaserCipher, analyzeArray} from "./sum.js";
 
 test('capitalize  ', () =>{
   let str = "hello";
