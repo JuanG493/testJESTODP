@@ -13,6 +13,14 @@
 			"corepack": true,
 			"pnpmVersion": "latest"
 		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"eamodio.gitlens",
+				"ms-vscode.live-server"
+			]
+		}
 	}
 
 	// Features to add to the dev container. More info: https://containers.dev/features.
