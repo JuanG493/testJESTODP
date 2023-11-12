@@ -1,6 +1,3 @@
-function suma(a, b) {
-  return a + b;
-}
 
 function capitalize(str){
   return (str[0].toUpperCase() + str.slice(1,));
@@ -55,4 +52,4 @@ function analyzeArray(arry){
   }  
   return {avarage: avg, min : minV, max: maxV, length: arry.length}
 }
-export {suma, capitalize, reverseString, calculator, ceaserCipher, analyzeArray};
+export {capitalize, reverseString, calculator, ceaserCipher, analyzeArray};
