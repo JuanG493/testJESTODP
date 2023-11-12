@@ -27,6 +27,14 @@ let  calculator = {
 
 
 }
+function ceaserCipher(str, key){
+for (let ch = 0; ch < str.length -1; ch++) {
+  console.log(str.charCodeAt(ch));
+  
+  
+}
+}
+ceaserCipher("juan", 1);
 // let a = calculator.add(10,5);
 // console.log(calculator.add(10, 5));
 export {suma, capitalize, reverseString, calculator};
