@@ -28,13 +28,22 @@ let  calculator = {
 
 }
 function ceaserCipher(str, key){
-for (let ch = 0; ch < str.length -1; ch++) {
-  console.log(str.charCodeAt(ch));
-  
-  
+let result = "";
+let copyKey = key;
+for (let ch = 0; ch < str.length ;ch++) {
+  let codeS = str.charCodeAt(ch);
+  if(key > 26 ){
+    copyKey = key % 26;
+  }
+  if(codeS >= 65 && codeS <= 90  || codeS >= 97 && codeS <= 122){
+    result += String.fromCharCode(codeS + copyKey);
+  }else{
+    result += str[ch];
+  }
 }
+return result;
 }
-ceaserCipher("juan", 1);
+// ceaserCipher("monica!monica", 88);
 
 // let a = calculator.add(10,5);
 // console.log(calculator.add(10, 5));

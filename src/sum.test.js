@@ -1,4 +1,4 @@
-import {suma, capitalize, reverseString, calculator} from "./sum.js";
+import {suma, capitalize, reverseString, calculator, ceaserCipher} from "./sum.js";
 let a = 5;
 let b = 10;
 
@@ -38,5 +38,17 @@ test("multiply two numbers ", () =>{
 });
 
 test("ceaser cipher", () => {
-  expect(ceaserCipher("juan", 1).toMatch(/kvbo/))
+  expect(ceaserCipher("monica",88).match(/wyxsmk/))
 }) 
+
+test("ceaser cipher: punctuation marks", () => {
+  expect(ceaserCipher("Hello&World",50).match(/	Fcjjm&Umpjb/))
+}) 
+
+test("ceaser cipher: a-z", () => {
+  expect(ceaserCipher("abcdefghijklmnopqrstuvwxyz", -10).match(/qrstuvwxyzabcdefghijklmnop/))
+}) 
+
+test("analyzeArray", () =>{
+  expect(analyzeeA([1,8,3,4,2,6]).toEqual({avarage:4, min:1, max: 8, length: 6}))
+})
