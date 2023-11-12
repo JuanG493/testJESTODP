@@ -37,3 +37,6 @@ test("multiply two numbers ", () =>{
   expect(calculator.multiply(a, b)).toBe(a * b);
 });
 
+test("ceaser cipher", () => {
+  expect(ceaserCipher("juan", 1).toMatch(/kvbo/))
+}) 

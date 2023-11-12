@@ -35,6 +35,7 @@ for (let ch = 0; ch < str.length -1; ch++) {
 }
 }
 ceaserCipher("juan", 1);
+
 // let a = calculator.add(10,5);
 // console.log(calculator.add(10, 5));
-export {suma, capitalize, reverseString, calculator};
+export {suma, capitalize, reverseString, calculator, ceaserCipher};
